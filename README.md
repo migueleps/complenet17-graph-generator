@@ -7,7 +7,6 @@ PDF file of the paper can be found at: http://www.dcc.fc.up.pt/~msilva/Pubs/comp
 
 Usage:
 1. make
-2. make -f Makefile.1
 3. ./genk -h
 
 This Source Code uses the work developed in the following article:
@@ -19,6 +18,7 @@ This software uses the nauty program version 2.4 by Brendan McKay. Therefore, na
 license restrictions apply to the usage of FaSE and GENK.
 
 If you use this code, please cite:
+
 @inproceedings{silva2017network,
   title={Network Motifs Detection Using Random Networks with Prescribed Subgraph Frequencies},
   author={Silva, Miguel EP and Paredes, Pedro and Ribeiro, Pedro},
