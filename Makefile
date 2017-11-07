@@ -1,27 +1,25 @@
-EXEC_NAME=FASE
+EXEC_NAME=genk
 CC=g++
 
-CFLAGS= -w -Wno-write-strings -O3 -std=c++11 -g
+CFLAGS= -w -std=c++11 -lm -pthread
 
 SRC =                   \
-	Fase.cpp 	\
-	Label.cpp	\
-	IGtrie.cpp	\
-	Isomorphism.cpp	\
-	Timer.cpp	\
-	Timer2.cpp	\
-	DynamicGraph.cpp\
-	GraphMatrix.cpp	\
-	GraphUtils.cpp	\
-	Random.cpp	\
-	nauty/nauty.c	\
-	nauty/nautil.c	\
-	nauty/naugraph.c \
-	FaseMain.cpp
+        Fase.cpp        \
+        Label.cpp       \
+        IGtrie.cpp      \
+        Isomorphism.cpp \
+        Timer.cpp       \
+        Timer2.cpp      \
+        DynamicGraph.cpp\
+        GraphMatrix.cpp \
+        GraphUtils.cpp  \
+        Random.cpp      \
+        nauty/nauty.c   \
+        nauty/nautil.c  \
+        nauty/naugraph.c \
+        GenSubgInv.cpp
 
 OBJ =  ${SRC:.cpp=.o}
-
-#------------------------------------------------------------
 
 all: ${EXEC_NAME}
 
