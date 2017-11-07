@@ -56,7 +56,7 @@ void print_graph2(Graph *g) {
     vector<int> neighs = g->outEdges(i)[0];
     for (int j = 0; j<neighs.size(); j++) {
       if (directed || neighs.at(j) > i)
-	fprintf("%d %d\n",i+1,neighs.at(j)+1);
+	fprintf(ofile,"%d %d\n",i+1,neighs.at(j)+1);
     }
   }
 }
@@ -80,21 +80,6 @@ void print_graph(Graph *g) {
   }
 }
 
-
-/***
-Print count:
-
-Input: An array of pairs<string,int>, representing subgraphs and their frequency
-
-Prints the array given as input.
-***/
-
-void print_subgraphs(vector<pair<int,string>> counts) {
-
-  for (int i = 0; i<counts.size(); i++)
-    fprintf(f_freq, "%s %d\n",counts[i].second.c_str(), counts[i].first);
-  
-}
 
 /***
 Copy graph:
@@ -672,7 +657,7 @@ int main(int argc, char **argv) {
     if (!strcmp("-maxtries",argv[i]))
       tries_max = atoi(argv[++i]);
     if (!strcmp("-o",argv[i]))
-      out_file=argv[++i];
+      outfile=argv[++i];
     if (!strcmp("-h",argv[i])) {
       print_help();
       return 0;
