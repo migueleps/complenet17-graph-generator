@@ -19,7 +19,7 @@ license restrictions apply to the usage of FaSE and GENK.
 
 If you use this code, please cite:
 
-> b = BibTeX.parse <<-END
+```
 @inproceedings{silva2017network,
   title={Network Motifs Detection Using Random Networks with Prescribed Subgraph Frequencies},
   author={Silva, Miguel EP and Paredes, Pedro and Ribeiro, Pedro},
@@ -28,4 +28,4 @@ If you use this code, please cite:
   year={2017},
   organization={Springer}
 }
-    END
+```
