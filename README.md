@@ -10,11 +10,20 @@ Usage:
 2. make -f Makefile.1
 3. ./genk -h
 
-This Source Code uses the work developed in the following articles:
+This Source Code uses the work developed in the following article:
 
 * ASONAM'2013 -http://asonam.cpsc.ucalgary.ca/ : Pedro Paredes and Pedro Ribeiro - Towards a Faster
 Network-Centric Subgraph Census: http://dl.acm.org/citation.cfm?doid=2492517.2492535.
-* (Submitted to) SNAM - https://www.springer.com/computer/database+management+%26+information+retrieval/journal/13278 : Pedro Paredes and Pedro Ribeiro - FaSE: Fast Exact and Approximate Subgraph Census
 
 This software uses the nauty program version 2.4 by Brendan McKay. Therefore, nauty's
 license restrictions apply to the usage of FaSE and GENK.
+
+If you use this code, please cite:
+@inproceedings{silva2017network,
+  title={Network Motifs Detection Using Random Networks with Prescribed Subgraph Frequencies},
+  author={Silva, Miguel EP and Paredes, Pedro and Ribeiro, Pedro},
+  booktitle={Workshop on Complex Networks CompleNet},
+  pages={17--29},
+  year={2017},
+  organization={Springer}
+}
